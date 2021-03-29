@@ -41,3 +41,6 @@ docker-compose exec postgres bash -c 'psql -U postgres wakarimi < /tmp/test.sql'
 
 - use [Postico](https://eggerapps.at/postico/)
 
+## Option6
+
+- use [SQL Tools(VS Code)](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg)

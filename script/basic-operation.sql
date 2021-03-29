@@ -48,7 +48,6 @@
 -- リストは順番を保持し、重複を許す
 -- 集合は順番を保持せず、重複を許さない
 -- SELECT * FROM testtable1;
-
 -- 検索する時に行の並び方を指定する
 -- SELECT * FROM testtable1 ORDER BY name;
 
@@ -69,3 +68,11 @@
 -- テーブルの一覧(シェルにて実行)
 -- # psql -U postgres wakarimi -c '\dt'
 -- Did not find any relations.
+
+-- CREATE TABLE testtable1( id INTEGER PRIMARY KEY, name TEXT NOT NULL, age INTEGER);
+-- INSERT INTO testtable1(id, name, age) VALUES(101, 'Alpha', 20),(102,'Blavo',25), (103, 'Charlie', 23);
+-- SELECT * FROM testtable1;
+
+-- UPDATE testtable1 SET age = 26 WHERE name = 'Blavo';
+-- DELETE FROM testtable1 WHERE name = 'Blavo';
+-- DELETE FROM testtable1;
