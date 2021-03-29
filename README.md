@@ -36,3 +36,8 @@ docker-compose exec postgres bash -c 'psql -U postgres wakarimi -c "\i /tmp/test
 ```shell
 docker-compose exec postgres bash -c 'psql -U postgres wakarimi < /tmp/test.sql'
 ```
+
+## Option 5
+
+- use [Postico](https://eggerapps.at/postico/)
+
