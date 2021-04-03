@@ -106,6 +106,14 @@ SELECT id, name, height     <- 最後
 (6 rows)
 */
 
+-- 身長を高い順に並べ、1ページ目に10名表示する
+-- OFFSET 1 とすると先頭から一行をスキップし、一番背が高い列をスキップしてしまう(OFFSET 自体省略可能)
+-- 身長が同じレコードがあった場合、並び替えの順番が不安定になるため、値が重複しない列を order by 句に追加する必要があるため、 id も追加
+-- SELECT * FROM members ORDER BY height DESC, id LIMIT 10 OFFSET 0;
+
+-- 11 ~ 20 件目を表示
+-- SELECT * FROM members ORDER BY height DESC, id LIMIT 10 OFFSET 10;
+
 /*
 drop table members;
 */
